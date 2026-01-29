@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Product Detector | Shop Safe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4F46E5', // Indigo Blue
+            accent: '#38BDF8', // Sky Blue
+            bg: '#F9FAFB',     // Soft Light Gray
+            surface: '#FFFFFF', // White
+            text: '#111827',    // Near Black
+            success: '#22C55E', // Green
+            warning: '#F59E0B', // Orange
+            danger: '#EF4444',  // Red
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #F9FAFB;
+      color: #111827;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    /* Clean Card Style - Portfolio Ready */
+    .clean-card {
+      background-color: #FFFFFF;
+      border: 1px solid #F3F4F6;
+      border-radius: 1rem;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease-in-out;
+    }
+    
+    .clean-card:hover {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+      border-color: #E5E7EB;
+    }
+
+    /* Primary Button */
+    .btn-primary {
+      background-color: #4F46E5;
+      color: white;
+      transition: background-color 0.2s;
+    }
+    .btn-primary:hover {
+      background-color: #4338ca;
+    }
+    
+    /* Input Styling */
+    .input-clean {
+      background: #FFFFFF;
+      border: 1px solid #E5E7EB;
+      color: #111827;
+      transition: all 0.2s;
+    }
+    .input-clean:focus {
+      border-color: #4F46E5;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    }
+    .input-clean::placeholder {
+      color: #9CA3AF;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "express": "https://esm.sh/express@^5.2.1",
+    "cors": "https://esm.sh/cors@^2.8.6",
+    "path": "https://esm.sh/path@^0.12.7",
+    "url": "https://esm.sh/url@^0.11.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-50">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
